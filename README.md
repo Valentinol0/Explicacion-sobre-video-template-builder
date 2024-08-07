@@ -38,7 +38,7 @@ myenv\Scripts\activate
 3. Situarnos en el directorio para instalar las dependencias:
 
 ```golpecito
-cd C:\Users\pc\Downloads\Script\video-template-builder-main
+cd C:\Users\pc\Downloads\Script\video-template-builder
 ```
 
 ```golpecito

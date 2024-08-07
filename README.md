@@ -69,6 +69,8 @@ Audios: MP3.
 
 Al agregar una mayor cantidad de imagenes principales debe ser menor el tiempo de transicion de las mismas(transicion time).
 
+El tamaño de las imagenes es adaptable.
+
 
 ## Caso de prueba
 Se obtiene como salida un archivo sample.mp4 el cual contiene imagenes ya precargadas con su fondo y audio referidas en este caso a productos de la marca new sport.

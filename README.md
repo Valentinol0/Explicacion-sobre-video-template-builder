@@ -47,7 +47,7 @@ python -m pip install -r requirements.txt
 
 Este comando instala todos los paquetes enumerados en el archivo `requirements.txt` en su entorno activo.
 
-4 Nos colocamos en el src y ejecutamos el main:
+4.Nos colocamos en el src y ejecutamos el main:
 
 ```golpecito
 cd src

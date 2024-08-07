@@ -7,7 +7,6 @@ Este marco le permite crear plantillas de video personalizadas utilizando imáge
 
 Este marco utiliza un enfoque basado en extracción para recopilar fotogramas de diversas fuentes y combinarlos según lo previsto. El modelo es sencillo: implica el uso de implementaciones de la clase "Fuente". Como usuario final, usted es responsable de crear versiones personalizadas de estas clases (si aún no se proporcionan) y administrar su uso.
 
-![Diseño de muestra](diseño-de muestra.png)
 
 ## Implementación
 
@@ -70,6 +69,9 @@ Audios: MP3.
 
 Al agregar una mayor cantidad de imagenes principales debe ser menor el tiempo de transicion de las mismas(transicion time).
 
+
+## Caso de prueba:
+Se obtiene como salida un sample.mp4 el cual contiene imagenes ya precargadas con su fondo y audio referidas en este caso a productos de la marca new sport.
 
 ## Licencia
 Este proyecto tiene licencia MIT, como se encuentra en el archivo LICENCIA.

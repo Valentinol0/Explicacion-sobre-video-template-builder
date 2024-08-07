@@ -27,21 +27,36 @@ Para garantizar un espacio de trabajo limpio y evitar posibles conflictos entre 
 1. El siguiente comando crea un nuevo entorno virtual llamado `myenv`.
 
 ```golpecito
-python3 -m venv .env
+python -m venv myenv
 ```
 
 2. Una vez creado el entorno, puedes activarlo usando:
 
 ```golpecito
-fuente .env/bin/activate
+myenv\Scripts\activate
 ```
 
-3. Instale las dependencias necesarias.
+3. Situarnos en el directorio para instalar las dependencias:
 
 ```golpecito
-instalación de pip -r requisitos.txt
+cd C:\Users\pc\Downloads\Script\video-template-builder-main
 ```
+
+```golpecito
+python -m pip install -r requirements.txt
+```
+
 Este comando instala todos los paquetes enumerados en el archivo `requirements.txt` en su entorno activo.
+
+4 Nos colocamos en el src y ejecutamos el main:
+
+```golpecito
+cd src
+```
+
+```golpecito
+python main.py
+```
 
 ## Muestra
 

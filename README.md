@@ -57,7 +57,7 @@ cd src
 python main.py
 ```
 
-## Cosas a tener en cuenta:
+## Cosas a tener en cuenta
 Las imagenes principales, de fondo o audios deben ser precargados anteriormente en un repositorio o sitio web.
 Formato:
 
@@ -70,8 +70,8 @@ Audios: MP3.
 Al agregar una mayor cantidad de imagenes principales debe ser menor el tiempo de transicion de las mismas(transicion time).
 
 
-## Caso de prueba:
-Se obtiene como salida un sample.mp4 el cual contiene imagenes ya precargadas con su fondo y audio referidas en este caso a productos de la marca new sport.
+## Caso de prueba
+Se obtiene como salida un archivo sample.mp4 el cual contiene imagenes ya precargadas con su fondo y audio referidas en este caso a productos de la marca new sport.
 
 ## Licencia
 Este proyecto tiene licencia MIT, como se encuentra en el archivo LICENCIA.

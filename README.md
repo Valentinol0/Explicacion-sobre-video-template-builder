@@ -1,60 +1,60 @@
-# Video Template Builder
+# Creador de plantillas de vídeo
 
 
-This framework allows you to create custom video templates using static images and metadata, making it easier and more efficient to produce video content on a larger scale.
+Este marco le permite crear plantillas de video personalizadas utilizando imágenes estáticas y metadatos, lo que hace que sea más fácil y eficiente producir contenido de video a mayor escala.
 
-## Design
+## Diseño
 
-This framework uses a pull-based approach to gather frames from various sources and combine them as intended. The model is straightforward: it involves the use of `Source` class implementations. As an end user, you are responsible for creating custom versions of these classes - if not already provided - and managing their usage.
+Este marco utiliza un enfoque basado en extracción para recopilar fotogramas de diversas fuentes y combinarlos según lo previsto. El modelo es sencillo: implica el uso de implementaciones de la clase "Fuente". Como usuario final, usted es responsable de crear versiones personalizadas de estas clases (si aún no se proporcionan) y administrar su uso.
 
-![Sample Design](sample-design.png)
+![Diseño de muestra](diseño-de muestra.png)
 
-## Implementation
+## Implementación
 
-This repository contains files which can be extended for custom implementations.
+Este repositorio contiene archivos que se pueden ampliar para implementaciones personalizadas.
 
-- `source.py` contains the basic definition for the `Source` class and sample `ImageSlideshowSource` and  `SingleMediaSource` implementations.
+- `source.py` contiene la definición básica de la clase `Source` y ejemplos de implementaciones de `ImageSlideshowSource` y `SingleMediaSource`.
 
-- `combinator.py` contains a sample `Source` subclass that combines two other sources to form a single one. It is important to note that `Combinator`s are also `Source`s themselves, and can be further combined by other `Source`s, they are placed in a different file for responsibility segregation reasons.
+- `combinator.py` contiene una subclase `Source` de ejemplo que combina otras dos fuentes para formar una sola. Es importante tener en cuenta que los "Combinadores" también son "Fuentes" en sí mismos y pueden combinarse aún más con otras "Fuentes". Se colocan en un archivo diferente por razones de segregación de responsabilidades.
 
-- `sink.py` pulls frames from a single final source to create an output `.mp4` file. It supports adding audio files as well.
+- `sink.py` extrae fotogramas de una única fuente final para crear un archivo de salida `.mp4`. También admite la adición de archivos de audio.
 
 
-## Requirements
+## Requisitos
 
-To ensure a clean workspace and avoid potential conflicts between dependencies, it's highly recommended to use a virtual environment. You can also skip directly to step 3.
+Para garantizar un espacio de trabajo limpio y evitar posibles conflictos entre dependencias, se recomienda encarecidamente utilizar un entorno virtual. También puedes saltar directamente al paso 3.
 
-1. The following command creates a new virtual environment named `myenv`.
+1. El siguiente comando crea un nuevo entorno virtual llamado `myenv`.
 
-```bash
+```golpecito
 python3 -m venv .env
 ```
 
-2. Once the environment is created, you can activate it using:
+2. Una vez creado el entorno, puedes activarlo usando:
 
-```bash
-source .env/bin/activate
+```golpecito
+fuente .env/bin/activate
 ```
 
-3. Install the necessary dependencies.
+3. Instale las dependencias necesarias.
 
-```bash
-pip install -r requirements.txt
+```golpecito
+instalación de pip -r requisitos.txt
 ```
-This command installs all the packages listed in the `requirements.txt` file into your active environment.
+Este comando instala todos los paquetes enumerados en el archivo `requirements.txt` en su entorno activo.
 
-## Sample
+## Muestra
 
-`main.py` contains a simple usage example for these classes. This sample use case pulls three images from the web and creates a slideshow with a background image.
+`main.py` contiene un ejemplo de uso simple para estas clases. Este caso de uso de muestra extrae tres imágenes de la web y crea una presentación de diapositivas con una imagen de fondo.
 
-- The Instagram and Facebook logos are used to create a looping slideshow
-- The WhatsApp logo is used as a background image.
+- Los logotipos de Instagram y Facebook se utilizan para crear una presentación de diapositivas en bucle.
+- El logo de WhatsApp se utiliza como imagen de fondo.
 
-The slideshow component has dimensions 550x550 whereas the background (and final video) has dimensions 700x700. The slideshow component is centered using a margin combinator.
+El componente de presentación de diapositivas tiene unas dimensiones de 550x550, mientras que el fondo (y el vídeo final) tiene unas dimensiones de 700x700. El componente de presentación de diapositivas se centra mediante un combinador de márgenes.
 
-The background could be a video as well without changing the API, but in this example we are using a static image.
+El fondo también podría ser un vídeo sin cambiar la API, pero en este ejemplo estamos usando una imagen estática.
 
-This sample use case could be enriched with custom creatives, and create a script that creates product slideshows and custom frames that enhance brand identity.
+Este caso de uso de muestra podría enriquecerse con creatividades personalizadas y crear un guión que cree presentaciones de diapositivas de productos y marcos personalizados que mejoren la identidad de la marca.
 
-## License
-This project is MIT licensed, as found in the LICENSE file.
+## Licencia
+Este proyecto tiene licencia MIT, como se encuentra en el archivo LICENCIA.

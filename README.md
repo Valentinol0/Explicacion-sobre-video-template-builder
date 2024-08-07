@@ -61,8 +61,11 @@ python main.py
 ## Cosas a tener en cuenta:
 Las imagenes principales, de fondo o audios deben ser precargados anteriormente en un repositorio o sitio web.
 Formato:
+
 Imagenes: PNG.
+
 Imagenes de fondo: JPG.
+
 Audios: MP3.
 
 Al agregar una mayor cantidad de imagenes principales debe ser menor el tiempo de transicion de las mismas(transicion time).

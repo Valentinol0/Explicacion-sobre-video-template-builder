@@ -58,18 +58,15 @@ cd src
 python main.py
 ```
 
-## Muestra
+## Cosas a tener en cuenta:
+Las imagenes principales, de fondo o audios deben ser precargados anteriormente en un repositorio o sitio web.
+Formato:
+Imagenes: PNG.
+Imagenes de fondo: JPG.
+Audios: MP3.
 
-`main.py` contiene un ejemplo de uso simple para estas clases. Este caso de uso de muestra extrae tres imágenes de la web y crea una presentación de diapositivas con una imagen de fondo.
+Al agregar una mayor cantidad de imagenes principales debe ser menor el tiempo de transicion de las mismas(transicion time).
 
-- Los logotipos de Instagram y Facebook se utilizan para crear una presentación de diapositivas en bucle.
-- El logo de WhatsApp se utiliza como imagen de fondo.
-
-El componente de presentación de diapositivas tiene unas dimensiones de 550x550, mientras que el fondo (y el vídeo final) tiene unas dimensiones de 700x700. El componente de presentación de diapositivas se centra mediante un combinador de márgenes.
-
-El fondo también podría ser un vídeo sin cambiar la API, pero en este ejemplo estamos usando una imagen estática.
-
-Este caso de uso de muestra podría enriquecerse con creatividades personalizadas y crear un guión que cree presentaciones de diapositivas de productos y marcos personalizados que mejoren la identidad de la marca.
 
 ## Licencia
 Este proyecto tiene licencia MIT, como se encuentra en el archivo LICENCIA.
